@@ -1,0 +1,96 @@
+{
+  "chain_name": "oro_1336-1",
+  "assets": [
+    {
+      "description": "The native token of Kii",
+      "denom_units": [
+        {
+          "denom": "akii",
+          "exponent": 0
+        },
+        {
+          "denom": "kii",
+          "exponent": 18
+        }
+      ],
+      "base": "akii",
+      "name": "Kii",
+      "display": "kii",
+      "symbol": "KII",
+      "logo_uris": {
+        "png": "https://raw.githubusercontent.com/KiiChain/testnets/main/testnet_oro/assets/kii_coin_oro.png"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/KiiChain/testnets/main/testnet_oro/assets/kii_coin_oro.png"
+        }
+      ],
+      "keywords": ["native", "utility"],
+      "socials": {
+        "website": "https://kiichain.io",
+        "twitter": "https://x.com/KiiChainio"
+      }
+    },
+    {
+      "description": "ATOM bridged via IBC from Cosmos Hub",
+      "denom_units": [
+        {
+          "denom": "ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701",
+          "exponent": 0
+        },
+        {
+          "denom": "atom",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/A4DB47A9D3CF9A068D454513891B526702455D3EF08FB9EB558C561F9DC2B701",
+      "name": "Cosmos Hub ATOM",
+      "display": "atom",
+      "symbol": "ATOM",
+      "logo_uris": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
+      ],
+      "ibc": {
+        "source_chain": "cosmoshub",
+        "dst_channel": "channel-3",
+        "src_channel": "channel-485"
+      }
+    },
+    {
+      "description": "Tokenized stake in the IDUNN Hotel Project by Green Nexux Engineering & Construction S.A.S.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+          "exponent": 0
+        },
+        {
+          "denom": "idunn",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+      "name": "Hotel IDUNN",
+      "display": "idunn",
+      "symbol": "IDUNN",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/apt-front.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/apt-front.webp"
+        }
+      ],
+      "keywords": ["RWA", "Real Estate", "Commertial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "6500000",
+        "contract_address": "kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg"
+      }
+    }
+  ]
+}
