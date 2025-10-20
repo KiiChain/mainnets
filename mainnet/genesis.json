@@ -2,7 +2,7 @@
   "app_name": "kiichaind",
   "app_version": "v5.0.0-13-g57ced36",
   "genesis_time": "2025-10-07T20:27:41.959715772Z",
-  "chain_id": "localchain_1010-1",
+  "chain_id": "kiichain_1783-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {
