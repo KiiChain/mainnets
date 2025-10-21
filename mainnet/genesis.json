@@ -148,6 +148,15 @@
               "amount": "286300000000000000000000000"
             }
           ]
+        },
+        {
+          "address": "kii Team funds *we need to remove 1k from somewhere else*",
+          "coins": [
+            {
+              "denom": "akii",
+              "amount": "1000000000000000000000"
+            }
+          ]
         }
       ],
       "supply": [
