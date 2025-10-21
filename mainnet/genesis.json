@@ -370,13 +370,6 @@
       "deposits": [],
       "votes": [],
       "proposals": [],
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "akii"
-          }
-        ]
-      },
       "voting_params": null,
       "tally_params": null,
       "params": {
