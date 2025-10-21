@@ -127,7 +127,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "800000000000000000000000000"
+              "amount": "799999000000000000000000000"
             }
           ]
         },
@@ -150,7 +150,7 @@
           ]
         },
         {
-          "address": "kii Team funds *we need to remove 1k from somewhere else*",
+          "address": "kii Team funds *1k taken from staking and rewards*",
           "coins": [
             {
               "denom": "akii",
