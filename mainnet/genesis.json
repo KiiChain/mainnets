@@ -193,8 +193,18 @@
         "enable_erc20": true,
         "permissionless_registration": false
       },
+      "token_pairs": [
+        {
+          "contract_owner": 1,
+          "erc20_address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+          "denom": "akii",
+          "enabled": true
+        }
+      ],
       "allowances": [],
-      "native_precompiles": [],
+      "native_precompiles": [
+        "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+      ],
       "dynamic_precompiles": []
     },
     "evidence": {
