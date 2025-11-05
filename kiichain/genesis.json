@@ -239,7 +239,7 @@
     "erc20": {
       "params": {
         "enable_erc20": true,
-        "permissionless_registration": false
+        "permissionless_registration": true
       },
       "token_pairs": [
         {
@@ -329,7 +329,7 @@
         "base_fee_change_denominator": 8,
         "elasticity_multiplier": 2,
         "enable_height": "0",
-        "base_fee": "333333333.000000000000000000",
+        "base_fee": "500000000.000000000000000000",
         "min_gas_price": "333333333.000000000000000000",
         "min_gas_multiplier": "0.500000000000000000"
       },
