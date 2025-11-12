@@ -312,8 +312,7 @@
         "native_oracle_denom": "kii",
         "enabled": false,
         "clamp_factor": "0.000040000000000000",
-        "twap_lookback_window": "120",
-        "fallback_native_price": "0.010000000000000000"
+        "twap_lookback_window": "120"
       },
       "fee_tokens": {
         "items": []
