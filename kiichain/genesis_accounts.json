@@ -65,7 +65,7 @@
         "coins": [
             {
                 "denom": "akii",
-                "amount": "286296500000000000000000000"
+                "amount": "286295500000000000000000000"
             }
         ]
     },
@@ -92,6 +92,16 @@
     {
         "name": "Validator #3",
         "address": "kii1wlvw09clqqru23k0gyypa2glrs4s8edglgrx95",
+        "coins": [
+            {
+                "denom": "akii",
+                "amount": "1000000000000000000000"
+            }
+        ]
+    },
+    {
+        "name": "Validator #4",
+        "address": "kii1d5fzd03kmn3r3r4fu53mgjvk0frfpme0zzx38s",
         "coins": [
             {
                 "denom": "akii",
