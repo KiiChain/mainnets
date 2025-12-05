@@ -64,6 +64,21 @@ jq '.app_state.staking.last_validator_powers = []' "$GENESIS" > "$TMP_GENESIS" &
 # Empty supply
 jq '.app_state.bank.supply = []' "$GENESIS" > "$TMP_GENESIS" && mv "$TMP_GENESIS" "$GENESIS"
 
+# enable prometheus metrics and all APIs for dev node, substitute chain id
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	sed -i '' 's/prometheus = false/prometheus = true/' "$CONFIG"
+	sed -i '' 's/prometheus-retention-time = 0/prometheus-retention-time  = 1000000000000/g' "$APP_TOML"
+	sed -i '' 's/enabled = false/enabled = true/g' "$APP_TOML"
+	sed -i '' 's/enable = false/enable = true/g' "$APP_TOML"
+	sed -i '' 's/evm-chain-id = 1010/evm-chain-id = 1783/g' "$APP_TOML"
+else
+	sed -i 's/prometheus = false/prometheus = true/' "$CONFIG"
+	sed -i 's/prometheus-retention-time  = "0"/prometheus-retention-time  = "1000000000000"/g' "$APP_TOML"
+	sed -i 's/enabled = false/enabled = true/g' "$APP_TOML"
+	sed -i 's/enable = false/enable = true/g' "$APP_TOML"
+	sed -i 's/evm-chain-id = 1010/evm-chain-id = 1783/g' "$APP_TOML"
+fi
+
 # Allocate genesis accounts (cosmos formatted addresses)
 $KIICHAIND genesis add-genesis-account "$VAL_KEY" 1000000000000000000000000000akii --keyring-backend "$KEYRING" --home "$HOMEDIR"
 $KIICHAIND genesis add-genesis-account "$USER1_KEY" 1000000000000000000000000000akii --keyring-backend "$KEYRING" --home "$HOMEDIR"
