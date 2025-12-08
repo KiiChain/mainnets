@@ -711,32 +711,7 @@
         "vote_period": "2",
         "vote_threshold": "0.667000000000000000",
         "reward_band": "0.020000000000000000",
-        "whitelist": [
-          {
-            "name": "btc"
-          },
-          {
-            "name": "eth"
-          },
-          {
-            "name": "sol"
-          },
-          {
-            "name": "xrp"
-          },
-          {
-            "name": "bnb"
-          },
-          {
-            "name": "usdt"
-          },
-          {
-            "name": "usdc"
-          },
-          {
-            "name": "trx"
-          }
-        ],
+        "whitelist": [],
         "slash_fraction": "0.000000000000000000",
         "slash_window": "48960",
         "min_valid_per_window": "0.050000000000000000",
