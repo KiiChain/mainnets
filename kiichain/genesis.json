@@ -617,7 +617,7 @@
         "min_deposit": [
           {
             "denom": "akii",
-            "amount": "100000000000000000000000"
+            "amount": "20000000000000000000000"
           }
         ],
         "max_deposit_period": "1209600s",
@@ -633,7 +633,7 @@
         "expedited_min_deposit": [
           {
             "denom": "akii",
-            "amount": "150000000000000000000000"
+            "amount": "35000000000000000000000"
           }
         ],
         "burn_vote_quorum": false,
