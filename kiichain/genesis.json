@@ -1,7 +1,7 @@
 {
   "app_name": "kiichaind",
   "app_version": "v6.0.0",
-  "genesis_time": "2025-12-05T12:00:00.000000000Z",
+  "genesis_time": "2025-12-05T12:00:00Z",
   "chain_id": "kiichain_1783-1",
   "initial_height": 1,
   "app_hash": null,
@@ -125,7 +125,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "1000000000000000000000"
+              "amount": "1002000000000000000000"
             }
           ]
         },
@@ -143,7 +143,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "500000000000000000000"
+              "amount": "502000000000000000000"
             }
           ]
         },
@@ -152,7 +152,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "1000000000000000000000"
+              "amount": "1002000000000000000000"
             }
           ]
         },
@@ -161,7 +161,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "286295500000000000000000000"
+              "amount": "286295490000000000000000000"
             }
           ]
         },
@@ -179,7 +179,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "1000000000000000000000"
+              "amount": "1002000000000000000000"
             }
           ]
         },
@@ -188,7 +188,7 @@
           "coins": [
             {
               "denom": "akii",
-              "amount": "1000000000000000000000"
+              "amount": "1002000000000000000000"
             }
           ]
         },
@@ -378,7 +378,7 @@
                 }
               }
             ],
-            "memo": "0abf82f544d4c9b55e558648e4c1a4f61dab4432@172.31.1.181:26656",
+            "memo": "69b739175eef2f85eee0cdc2446e6e4bd6e402c9@172.31.1.181:26656",
             "timeout_height": "0",
             "unordered": false,
             "timeout_timestamp": null,
@@ -401,7 +401,12 @@
               }
             ],
             "fee": {
-              "amount": [],
+              "amount": [
+                {
+                  "denom": "akii",
+                  "amount": "1000000000000000000"
+                }
+              ],
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
@@ -409,7 +414,7 @@
             "tip": null
           },
           "signatures": [
-            "rdpcqoGeGweOn83NqQEPBhpkFBccBBLYUV1kl7EKVkRjajZPJ98Ujavg9muo6Y3T62KAHZyMRo27Q8YaaacgcwE="
+            "phyo3gIEgd0bctluaHcWk5aWziE+rOUwsj7Ct1letYBeIfz5KV9EG/E8TD5ESKsT9635Xl9sCzyjqvVJHPLVTQE="
           ]
         },
         {
@@ -442,7 +447,7 @@
                 }
               }
             ],
-            "memo": "8e4f84972cd6acf7ac6d5c499004a8899a7e0eed@172.31.1.181:26656",
+            "memo": "517b8148066ffa433bab385e53ab7b8751535534@172.31.1.181:26656",
             "timeout_height": "0",
             "unordered": false,
             "timeout_timestamp": null,
@@ -465,7 +470,12 @@
               }
             ],
             "fee": {
-              "amount": [],
+              "amount": [
+                {
+                  "denom": "akii",
+                  "amount": "1000000000000000000"
+                }
+              ],
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
@@ -473,7 +483,7 @@
             "tip": null
           },
           "signatures": [
-            "bZyXhP+V/aQlPRKnSuMhhsj0osNl8SmztgGQTVuyPQ87H1gzi9XkPJPAFJEjxokJiDvo3nWn95zS266N9hGMjAA="
+            "Nj2tS4CJb1ysdG9gaFoYlvHJt7igkaiksVZSL/Bq/AYuszU2O81PP68HfxVGIC4OU4IaBppvr6hS7wstJPNgIAE="
           ]
         },
         {
@@ -506,7 +516,7 @@
                 }
               }
             ],
-            "memo": "e5128d59d1d5d27740a65025893edb8b16c84123@172.31.1.181:26656",
+            "memo": "de402b2d832def96bd39fef2057240462c09d848@172.31.1.181:26656",
             "timeout_height": "0",
             "unordered": false,
             "timeout_timestamp": null,
@@ -529,7 +539,12 @@
               }
             ],
             "fee": {
-              "amount": [],
+              "amount": [
+                {
+                  "denom": "akii",
+                  "amount": "1000000000000000000"
+                }
+              ],
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
@@ -537,7 +552,7 @@
             "tip": null
           },
           "signatures": [
-            "aRauuMWahxDWuxmPGI8zxBQ9996d0m1MP5ecsThLTEko1bC4FblVwmJgAXLlB6LhwG/5H8rtVHInpiKadCmgEAA="
+            "FyGxHDb+3iUulgUPE595U6bCWuP8Dfpgam1BqLZ15MUjms30T5SMgi3Mr5Xxsi5rLZTNBJj+traoSp3+irA3egA="
           ]
         },
         {
@@ -570,7 +585,7 @@
                 }
               }
             ],
-            "memo": "f138c43665e03bb6a363751c970b282aa940947a@172.31.1.181:26656",
+            "memo": "243c08040fb6fe2ace990ac1087c77bdead78692@172.31.1.181:26656",
             "timeout_height": "0",
             "unordered": false,
             "timeout_timestamp": null,
@@ -593,7 +608,12 @@
               }
             ],
             "fee": {
-              "amount": [],
+              "amount": [
+                {
+                  "denom": "akii",
+                  "amount": "1000000000000000000"
+                }
+              ],
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
@@ -601,7 +621,7 @@
             "tip": null
           },
           "signatures": [
-            "fsIHHGDXpKIcja97KMWtOKA/cVrP0fPSZ6UIVxahnnxnkKZFlKsXlQwdxf+Udyh2QZJ5ARDZIRyO7wPT9sLjAAE="
+            "6KAWLUI1OVud8qeOmWVV1cD/EQss+aOoRiBEoo239vcPi0DyOtsPcGmmMvy733BizKOzehD2w/wok54F3g630wE="
           ]
         }
       ]
