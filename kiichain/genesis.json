@@ -1,6 +1,6 @@
 {
   "app_name": "kiichaind",
-  "app_version": "v6.0.0",
+  "app_version": "v6.1.0",
   "genesis_time": "2025-12-05T12:00:00Z",
   "chain_id": "kiichain_1783-1",
   "initial_height": 1,
