@@ -17,5 +17,5 @@
     "deposit": "3500000000000000000000akii",
     "title": "Reduce the number of validators from 25 to 21",
     "summary": "This reduces the maximum number of validators from 25 to 21.\nThis ensure better reward distribution.",
-    "expedited": true
+    "expedited": false
 }
