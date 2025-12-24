@@ -1,0 +1,12 @@
+{
+    "SimulateTxAccessor": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "SafeProxyFactory": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "TokenCallbackHandler": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "CompatibilityFallbackHandler": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "CreateCall": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "MultiSend": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "MultiSendCallOnly": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "SignMessageLib": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "SafeL2": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1",
+    "Safe": "https://github.com/safe-fndn/safe-smart-account/releases/tag/v1.4.1"
+}
