@@ -42,7 +42,7 @@ Run script provided to set up a `kiichaind` service without `Cosmovisor`:
 
 Or run the second script provided to set up a `kiichaind` service with `Cosmovisor`:
 
-- [join_kiichain_cv.sh](./join_kiichaincv.sh) will create a `cosmosvisor-kiichaind` service.
+- [join_kiichain_cv.sh](./join_kiichain_cv.sh) will create a `cosmosvisor-kiichaind` service.
   - Script must be run either as root or from a sudoer account.
 
 ### Node manual installation
