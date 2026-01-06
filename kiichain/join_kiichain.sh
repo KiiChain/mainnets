@@ -12,7 +12,7 @@ NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
 NODE_HOME=~/.kiichain
 NODE_MONIKER=kiichain_mainnet
 SERVICE_NAME=kiichain
-SERVICE_VERSION="v1.2.0"
+SERVICE_VERSION="v6.1.0"
 MINIMUM_GAS_PRICES="600000000akii"
 # ***
 
