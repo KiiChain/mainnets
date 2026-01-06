@@ -1,37 +1,26 @@
-# `Testnet Oro` Chain Details
+# `Kiichain` mainnet Details
 
-The `Testnet Oro` chain is the Kiichain testnet.
-
-- **Chain-ID**: `oro_1336-1`
+- **Chain-ID**: `kiichain_1783-1`
 - **denom**: `akii`
 - **decimals**: `18`
-- **Spawn time**: `2024-12-17T17:55:40.565516258Z`
-- **Genesis file with CCV state:** [genesis.json](./genesis.json) (available after chain spawn time)
-- **SHA256 for genesis file**: `2805ae1752dc8c3435afd6bdceea929b3bbd2883606f3f3589f4d62c99156d2d`
+- **Spawn time**: `2025-12-05T12:00:00Z`
+- **SHA256 for genesis file**: `67fcfa1af8dedbbb9036b3651dfd4dd353a00f6df2531691d569ea5f743fbf30`
 
 ## Endpoints
 
 The following endpoints are exposed:
 
-**Uno**:
+- `RPC`: https://rpc.kiivalidator.com
+- `Rest (LCD)`: https://lcd.kiivalidator.com
+- `GRPC`: https://grpc.kiivalidator.com:443
+- `JSON-RPC (EVM)`: https://json-rpc.kiivalidator.com
+- `WebSocket`: wss://ws.kiivalidator.com/websocket
 
-- `RPC`: https://rpc.uno.sentry.testnet.v3.kiivalidator.com
-- `Rest (LCD)`: https://lcd.uno.sentry.testnet.v3.kiivalidator.com
-- `JSON-RPC (EVM)`: https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com
+Persistent peers:
 
-Persistent peer:
+- 4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-1.kiivalidator.com:26656
+- ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-2.kiivalidator.com:26656
 
-- 5b6aa55124c0fd28e47d7da091a69973964a9fe1@uno.sentry.testnet.v3.kiivalidator.com:26656
-
-**Dos**:
-
-- `RPC`: https://rpc.dos.sentry.testnet.v3.kiivalidator.com
-- `Rest (LCD)`: https://lcd.dos.sentry.testnet.v3.kiivalidator.com
-- `JSON-RPC (EVM)`: https://json-rpc.dos.sentry.testnet.v3.kiivalidator.com
-
-Persistent peer:
-
-- 5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656
 
 ## How to Join
 
@@ -47,12 +36,12 @@ The scripts provided in this repo will install Kiichaind and optionally set up a
 
 Run script provided to set up a `kiichaind` service without `Cosmovisor`:
 
-- [join_oro.sh](./join_oro.sh) will create a `kiichaind` service.
+- [join_kiichain.sh](./join_kiichain.sh) will create a `kiichaind` service.
   - Script must be run either as root or from a sudoer account.
 
 Or run the second script provided to set up a `kiichaind` service with `Cosmovisor`:
 
-- [join_oro_cv.sh](./join_oro_cv.sh) will create a `cosmosvisor-kiichaind` service.
+- [join_kiichain_cv.sh](./join_kiichain_cv.sh) will create a `cosmosvisor-kiichaind` service.
   - Script must be run either as root or from a sudoer account.
 
 ### Node manual installation

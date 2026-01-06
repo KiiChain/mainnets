@@ -10,54 +10,39 @@ Here you will find information such as:
 
 ----- To update -----
 
-## Testnet Oro
+## Kiichain
 
-KiiChain is a peer-to-peer decentralized EVM-compatible network built with the Cosmos SDK. The public testnet is called KiiChain Testnet Oro.
+KiiChain is a peer-to-peer decentralized EVM-compatible network built with the Cosmos SDK. The public mainnet is called Kiichain.
 
-Testnet Oro is the permanent testnet with smart contract functionality and EVM compatibility. All Hackathons, Builds, Airdrops, and test deployments should be done on this network.
+For Hackathons, builds, test deployments and any experimentation, please refer to [Testnet Oro](https://github.com/KiiChain/testnets/tree/main/testnet_oro), our permanent testnet with smart contract functionality and EVM compatibility. 
 
-You can find genesis and onboarding scripts here:
+For mainnet you can find genesis and onboarding scripts here:
 
-- [Testnet Oro](./testnet_oro/)
+- [Kiichain](./kiichain/)
 
 ### Docs
 
-You can find more information about testnet Oro here:
+You can find more information about kiichain here:
 
-- [Testnet Oro](https://docs.kiiglobal.io/docs/build-on-kiichain/testnet-oro)
+- [Kiichain](https://docs.kiiglobal.io/docs/build-on-kiichain/kiichain-mainnet)
 
 ### Endpoints
 
 The following endpoints are exposed:
 
-**Uno**:
+- `RPC`: https://rpc.kiivalidator.com
+- `Rest (LCD)`: https://lcd.kiivalidator.com
+- `GRPC`: https://grpc.kiivalidator.com:443
+- `JSON-RPC (EVM)`: https://json-rpc.kiivalidator.com
+- `WebSocket`: wss://ws.kiivalidator.com/websocket
 
-- `RPC`: https://rpc.uno.sentry.testnet.v3.kiivalidator.com
-- `Rest (LCD)`: https://lcd.uno.sentry.testnet.v3.kiivalidator.com
-- `JSON-RPC (EVM)`: https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com
+Persistent peers:
 
-Persistent peer:
+- 4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-1.kiivalidator.com:26656
+- ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-2.kiivalidator.com:26656
 
-- 5b6aa55124c0fd28e47d7da091a69973964a9fe1@uno.sentry.testnet.v3.kiivalidator.com:26656
+## Discord
 
-**Dos**:
-
-- `RPC`: https://rpc.dos.sentry.testnet.v3.kiivalidator.com
-- `Rest (LCD)`: https://lcd.dos.sentry.testnet.v3.kiivalidator.com
-- `JSON-RPC (EVM)`: https://json-rpc.dos.sentry.testnet.v3.kiivalidator.com
-
-- 5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656
-
-### Faucet
-
-You can get tokens to our Testnet Oro by using our Explorer app:
-
-- [KiiChain Explorer Faucet](https://explorer.kiichain.io/wallet/accounts)
-
-Our through our Discord channel:
+You can get in touch through our Discord channel:
 
 - [Discord Kiichain Invitation](https://discord.com/invite/kiichain)
-
-More information about how to use our discord Faucet can be found at:
-
-- [Testnet Faucet](https://docs.kiiglobal.io/docs/build-on-kiichain/developer-tools/testnet-faucet)

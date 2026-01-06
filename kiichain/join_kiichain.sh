@@ -1,8 +1,8 @@
 #!/bin/bash
-# Set up a service to join the testnet oro chain.
+# Set up a service to join the kiichain mainnet.
 
 # How to use:
-# join_oro priv_validator_key.json node_key.json
+# join_kiichain priv_validator_key.json node_key.json
 
 # Configuration
 # You should only have to modify the values in this block
@@ -10,23 +10,24 @@
 PRIV_VALIDATOR_KEY_FILE=${1:-"$HOME/priv_validator_key.json"}
 NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
 NODE_HOME=~/.kiichain
-NODE_MONIKER=testnet_oro
+NODE_MONIKER=kiichain
 SERVICE_NAME=kiichain
-SERVICE_VERSION="v1.2.0"
-MINIMUM_GAS_PRICES="1000000000akii"
+SERVICE_VERSION="v6.1.0"
+MINIMUM_GAS_PRICES="333333333akii"
 # ***
 
 # Binary
 CHAIN_BINARY='kiichaind'
-CHAIN_ID="oro_1336-1"
+CHAIN_ID="kiichain_1783-1"
+EVM_CHAIN_ID=1783
 
 # Persistent peers and RPC endpoints
-PERSISTENT_PEERS="5b6aa55124c0fd28e47d7da091a69973964a9fe1@uno.sentry.testnet.v3.kiivalidator.com:26656,5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656"
-PRIMARY_ENDPOINT=https://rpc.uno.sentry.testnet.v3.kiivalidator.com
-SECONDARY_ENDPOINT=https://rpc.dos.sentry.testnet.v3.kiivalidator.com
+PERSISTENT_PEERS="4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-1.kiivalidator.com:26656,ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-2.kiivalidator.com:26656"
+PRIMARY_ENDPOINT=https://rpc.kiivalidator.com
+SECONDARY_ENDPOINT=https://rpc.kiivalidator.com
 
 # The genesis for the chain
-GENESIS_URL=https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/genesis.json
+GENESIS_URL=https://raw.githubusercontent.com/KiiChain/mainnets/refs/heads/main/kiichain/genesis.json
 
 # Install wget, git and jq
 sudo apt update
@@ -69,6 +70,8 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/^persistent_peers =/ s^= .*^= \"$PERSISTENT_PEERS\"^" $NODE_HOME/config/config.toml
 # Set the min gas price
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$MINIMUM_GAS_PRICES\"^" $NODE_HOME/config/app.toml
+# Set the evm chain id
+sed -i -e "/evm-chain-id =/ s/= .*/= $EVM_CHAIN_ID/"  $NODE_HOME/config/app.toml
 
 # Configure state-sync
 TRUST_HEIGHT_DELTA=200
