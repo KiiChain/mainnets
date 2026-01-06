@@ -10,7 +10,7 @@
 PRIV_VALIDATOR_KEY_FILE=${1:-"$HOME/priv_validator_key.json"}
 NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
 NODE_HOME=~/.kiichain
-NODE_MONIKER=kiichain_mainnet
+NODE_MONIKER=kiichain
 SERVICE_NAME=kiichain
 SERVICE_VERSION="v6.1.0"
 MINIMUM_GAS_PRICES="500000000akii"
