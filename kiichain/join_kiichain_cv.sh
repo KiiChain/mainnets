@@ -13,7 +13,7 @@ NODE_HOME=~/.kiichain
 NODE_MONIKER=kiichain_mainnet
 SERVICE_NAME=kiichain
 SERVICE_VERSION="v6.1.0"
-MINIMUM_GAS_PRICES="400000000akii"
+MINIMUM_GAS_PRICES="500000000akii"
 # ***
 
 # Binary
