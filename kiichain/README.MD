@@ -3,8 +3,7 @@
 - **Chain-ID**: `kiichain_1783-1`
 - **denom**: `akii`
 - **decimals**: `18`
-- **Spawn time**: `2024-12-17T17:55:40.565516258Z`
-- **Genesis file with CCV state:** [genesis.json](./genesis.json) (available after chain spawn time)
+- **Spawn time**: `2025-12-05T12:00:00Z`
 - **SHA256 for genesis file**: `67fcfa1af8dedbbb9036b3651dfd4dd353a00f6df2531691d569ea5f743fbf30`
 
 ## Endpoints
@@ -19,8 +18,8 @@ The following endpoints are exposed:
 
 Persistent peers:
 
-- ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-1.kiivalidator.com:26656
-- 4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-2.kiivalidator.com:26656
+- 4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-1.kiivalidator.com:26656
+- ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-2.kiivalidator.com:26656
 
 
 ## How to Join

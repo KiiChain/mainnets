@@ -38,8 +38,8 @@ The following endpoints are exposed:
 
 Persistent peers:
 
-- ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-1.kiivalidator.com:26656
-- 4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-2.kiivalidator.com:26656
+- 4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-1.kiivalidator.com:26656
+- ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-2.kiivalidator.com:26656
 
 ## Discord
 
