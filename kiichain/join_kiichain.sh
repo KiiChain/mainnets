@@ -19,6 +19,7 @@ MINIMUM_GAS_PRICES="333333333akii"
 # Binary
 CHAIN_BINARY='kiichaind'
 CHAIN_ID="kiichain_1783-1"
+EVM_CHAIN_ID=1783
 
 # Persistent peers and RPC endpoints
 PERSISTENT_PEERS="4d0c3be48018cf8234faa46d789634f8a811dc5b@p2p-1.kiivalidator.com:26656,ac58976b16880535d56b2e1fe1f499a3841c4039@p2p-2.kiivalidator.com:26656"
@@ -69,6 +70,8 @@ $CHAIN_BINARY init $NODE_MONIKER --chain-id $CHAIN_ID --home $NODE_HOME
 sed -i -e "/^persistent_peers =/ s^= .*^= \"$PERSISTENT_PEERS\"^" $NODE_HOME/config/config.toml
 # Set the min gas price
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$MINIMUM_GAS_PRICES\"^" $NODE_HOME/config/app.toml
+# Set the evm chain id
+sed -i -e "/evm-chain-id =/ s/= .*/= $EVM_CHAIN_ID/"  $NODE_HOME/config/app.toml
 
 # Configure state-sync
 TRUST_HEIGHT_DELTA=200
