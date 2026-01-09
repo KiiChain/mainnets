@@ -29,9 +29,9 @@ SECONDARY_ENDPOINT=https://rpc.kiivalidator.com
 # The genesis for the chain
 GENESIS_URL=https://raw.githubusercontent.com/KiiChain/mainnets/refs/heads/main/kiichain/genesis.json
 
-# Install wget, git and jq
+# Install wget, git, jq and build-essential
 sudo apt update
-sudo apt-get install git jq curl wget -y
+sudo apt-get install git jq curl wget build-essential -y
 
 # Stop service if exists
 systemctl --user stop $SERVICE_NAME.service
@@ -47,8 +47,6 @@ export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
 # Install Kiichain binary
-echo "Installing build-essential..."
-sudo apt install build-essential -y
 echo "Installing Kiichain..."
 cd $HOME
 mkdir -p $HOME/go/bin
