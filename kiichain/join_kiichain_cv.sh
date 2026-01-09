@@ -74,7 +74,7 @@ sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$MINIMUM_GAS_PRICES\"^" $NODE_HOME/
 sed -i -e "/evm-chain-id =/ s/= .*/= $EVM_CHAIN_ID/"  $NODE_HOME/config/app.toml
 
 # Configure state-sync
-TRUST_HEIGHT_DELTA=200
+TRUST_HEIGHT_DELTA=1500
 LATEST_HEIGHT=$(curl -s "$PRIMARY_ENDPOINT"/block | jq -r ".result.block.header.height")
 if [[ "$LATEST_HEIGHT" -gt "$TRUST_HEIGHT_DELTA" ]]; then
 SYNC_BLOCK_HEIGHT=$(($LATEST_HEIGHT - $TRUST_HEIGHT_DELTA))
