@@ -29,9 +29,9 @@ SECONDARY_ENDPOINT=https://rpc.kiivalidator.com
 # The genesis for the chain
 GENESIS_URL=https://raw.githubusercontent.com/KiiChain/mainnets/refs/heads/main/kiichain/genesis.json
 
-# Install wget, git and jq
+# Install wget, git, jq and build essential
 sudo apt update
-sudo apt-get install git jq curl wget -y
+sudo apt-get install git jq curl wget build-essential -y
 
 # Stop service if exists
 systemctl --user stop $SERVICE_NAME.service
@@ -47,8 +47,6 @@ export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
 # Install Kiichain binary
-echo "Installing build-essential..."
-sudo apt install build-essential -y
 echo "Installing Kiichain..."
 cd $HOME
 mkdir -p $HOME/go/bin
@@ -74,7 +72,7 @@ sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$MINIMUM_GAS_PRICES\"^" $NODE_HOME/
 sed -i -e "/evm-chain-id =/ s/= .*/= $EVM_CHAIN_ID/"  $NODE_HOME/config/app.toml
 
 # Configure state-sync
-TRUST_HEIGHT_DELTA=200
+TRUST_HEIGHT_DELTA=1500
 LATEST_HEIGHT=$(curl -s "$PRIMARY_ENDPOINT"/block | jq -r ".result.block.header.height")
 if [[ "$LATEST_HEIGHT" -gt "$TRUST_HEIGHT_DELTA" ]]; then
 SYNC_BLOCK_HEIGHT=$(($LATEST_HEIGHT - $TRUST_HEIGHT_DELTA))
@@ -112,7 +110,7 @@ echo "After=network-online.target"          | sudo tee /etc/systemd/system/$SERV
 echo ""                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Service]"                            | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "User=$USER"                           | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --x-crisis-skip-assert-invariants --home $NODE_HOME --chain-id $CHAIN_ID" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "ExecStart=$HOME/go/bin/$CHAIN_BINARY start --home $NODE_HOME --chain-id $CHAIN_ID" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Restart=always"                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "RestartSec=3"                         | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "LimitNOFILE=4096"                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
