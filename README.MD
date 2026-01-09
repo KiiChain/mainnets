@@ -4,19 +4,17 @@ This repository stores information about the Kiichain Mainnets.
 
 Here you will find information such as:
 
-- Gensisis file
+- Genesis file
 - Onboarding scripts
 - General chain information
-
------ To update -----
 
 ## Kiichain
 
 KiiChain is a peer-to-peer decentralized EVM-compatible network built with the Cosmos SDK. The public mainnet is called Kiichain.
 
-For Hackathons, builds, test deployments and any experimentation, please refer to [Testnet Oro](https://github.com/KiiChain/testnets/tree/main/testnet_oro), our permanent testnet with smart contract functionality and EVM compatibility. 
+For Hackathons, builds, test deployments, and any experimentation, please refer to [Testnet Oro](https://github.com/KiiChain/testnets/tree/main/testnet_oro), our permanent testnet with smart contract functionality and EVM compatibility. 
 
-For mainnet you can find genesis and onboarding scripts here:
+For mainnet, you can find genesis and onboarding scripts here:
 
 - [Kiichain](./kiichain/)
 
