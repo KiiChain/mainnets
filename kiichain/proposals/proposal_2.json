@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v6.1.1",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "1663538",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "3500000000000000000000akii",
+    "title": "Upgrade Kiichain to v6.1.1",
+    "summary": "Upgrade Kiichain to v6.1.1.\n- Changelog: https://github.com/KiiChain/kiichain/releases/tag/v6.1.1",
+    "expedited": true
+}
