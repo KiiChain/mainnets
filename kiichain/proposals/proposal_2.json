@@ -6,7 +6,7 @@
             "plan": {
                 "name": "v6.1.1",
                 "time": "0001-01-01T00:00:00Z",
-                "height": "1663538",
+                "height": "1774752",
                 "info": "",
                 "upgraded_client_state": null
             }
@@ -15,6 +15,6 @@
     "metadata": "ipfs://CID",
     "deposit": "3500000000000000000000akii",
     "title": "Upgrade Kiichain to v6.1.1",
-    "summary": "Upgrade Kiichain to v6.1.1.\n- Changelog: https://github.com/KiiChain/kiichain/releases/tag/v6.1.1",
+    "summary": "This proposal upgrades Kiichain to version v6.1.1.\n\nThe upgrade is scheduled for 2026-01-29 around 17:00:00 UTC (block height 1,774,752).\n\nChangelog and release details:\n- https://github.com/KiiChain/kiichain/releases/tag/v6.1.1",
     "expedited": true
 }
