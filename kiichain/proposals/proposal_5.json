@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v7.2.0",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "5137094",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "3500000000000000000000akii",
+    "title": "Upgrade Kiichain Testnet Oro to v7.2.0",
+    "summary": "This proposal upgrades Kiichain to version v7.2.0.\n\nThe upgrade is scheduled for 2026-04-30 around 17:00:00 UTC (block height 5,137,094).\n\nChangelog and release details:\n https://github.com/KiiChain/kiichain/releases/tag/v7.2.0",
+    "expedited": false
+}
