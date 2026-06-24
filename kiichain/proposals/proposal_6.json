@@ -68,7 +68,7 @@
         }
     ],
     "metadata": "ipfs://CID",
-    "deposit": "10000000000000000000akii",
+    "deposit": "3500000000000000000000akii",
     "title": "Restrict ICA Host allow messages, remove distribution precompile, and disable the ICA module",
     "summary": "Restrict allow messages on IBC ICA Host to prevent potential security risks, remove the distribution precompile (0x0000000000000000000000000000000000000801) from the EVM active static precompiles, and disable the Interchain Accounts (ICA) module by turning off both the ICA Host (host_enabled=false) and ICA Controller (controller_enabled=false) submodules.",
     "expedited": false
