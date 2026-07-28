@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v7.3.0",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "8497352",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "35000000000000000000000akii",
+    "title": "Upgrade Kiichain to v7.3.0",
+    "summary": "This proposal upgrades Kiichain to version v7.3.0.\n\nThe upgrade is scheduled for 2026-07-30 around 17:00:00 UTC (block height 8,497,352).\n\nv7.3.0 is a security release that applies the coordinated Cosmos EVM hotfix. It has already been applied to the Oro testnet at height 33,659,735.\n\nValidators should install the prebuilt linux binary attached to the release and verify it against SHA256SUMS-v7.3.0.txt before staging it in cosmovisor under the upgrade name v7.3.0.\n\nChangelog and release details:\n https://github.com/KiiChain/kiichain/releases/tag/v7.3.0",
+    "expedited": true
+}
