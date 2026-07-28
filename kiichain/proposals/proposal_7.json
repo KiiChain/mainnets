@@ -13,7 +13,7 @@
         }
     ],
     "metadata": "ipfs://CID",
-    "deposit": "35000000000000000000000akii",
+    "deposit": "3500000000000000000000akii",
     "title": "Upgrade Kiichain to v7.3.0",
     "summary": "This proposal upgrades Kiichain to version v7.3.0.\n\nThe upgrade is scheduled for 2026-07-30 around 17:00:00 UTC (block height 8,497,352).\n\nv7.3.0 is a security release that applies the coordinated Cosmos EVM hotfix. It has already been applied to the Oro testnet at height 33,659,735.\n\nValidators should build v7.3.0 from source and stage the resulting binary in cosmovisor under the upgrade name v7.3.0. Note that the v7.3.0 tag was moved after the coordinated disclosure ended, so run 'git fetch --tags --force' before checking it out.\n\nChangelog and release details:\n https://github.com/KiiChain/kiichain/releases/tag/v7.3.0",
     "expedited": true
