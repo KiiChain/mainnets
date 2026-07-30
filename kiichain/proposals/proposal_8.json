@@ -37,7 +37,7 @@
         }
     ],
     "metadata": "ipfs://CID",
-    "deposit": "20000000000000000000000akii",
+    "deposit": "3500000000000000000000akii",
     "title": "Re-enable the distribution precompile on EVM",
     "summary": "This proposal re-enables the distribution precompile (0x0000000000000000000000000000000000000801) on the EVM active static precompiles list.\n\nIt was removed in proposal 6 as a temporary mitigation for a supply-inflation bug when a non-20-byte withdraw address was mirrored into the EVM StateDB. That bug is fixed in v7.3.0 via a 20-byte address codec guard on the precompile path, so the precompile can safely be restored.\n\nRe-enabling it restores EVM access to staking reward withdrawal, validator commission withdrawal, and community pool funding.",
     "expedited": false
