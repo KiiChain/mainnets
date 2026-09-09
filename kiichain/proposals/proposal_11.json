@@ -39,7 +39,7 @@
             "channel_or_client_id": "channel-0",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         },
         {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
@@ -48,7 +48,7 @@
             "channel_or_client_id": "channel-1",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         },
         {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
@@ -57,12 +57,12 @@
             "channel_or_client_id": "channel-2",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         }
     ],
     "metadata": "ipfs://CID",
     "deposit": "20000000000000000000000akii",
     "title": "Set 4-day voting and rate-limit akii IBC",
-    "summary": "1) Reduce governance voting_period from 5 days (432000s) to 4 days (345600s).\n2) Add IBC rate limits for native $KII (akii) at 1% send / 1% recv over 48h on transfer channel-0 (Cosmos Hub), channel-1 (Noble), and channel-2 (Osmosis).",
+    "summary": "Reduce governance voting_period from 5 days (432000s) to 4 days (345600s).\n- Add IBC rate limits for native $KII (akii) at 1% send / 1% recv over 48h\n- Applies to transfer channel-0 (Cosmos Hub), channel-1 (Noble), and channel-2 (Osmosis)",
     "expedited": false
 }
