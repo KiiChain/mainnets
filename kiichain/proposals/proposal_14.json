@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.slashing.v1beta1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "signed_blocks_window": "20000",
+                "min_signed_per_window": "0.050000000000000000",
+                "downtime_jail_duration": "600s",
+                "slash_fraction_double_sign": "0.050000000000000000",
+                "slash_fraction_downtime": "0.000100000000000000"
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "20000000000000000000000akii",
+    "title": "Reduce Validator Downtime Slashing Penalty",
+    "summary": "This proposal reduces the x/slashing downtime penalty (slash_fraction_downtime) on KiiChain from 1% to 0.01%.\n\nA 0.01% penalty keeps an incentive for validators to maintain uptime without causing significant losses for delegators.",
+    "expedited": false
+}
