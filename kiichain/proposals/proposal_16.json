@@ -6,7 +6,7 @@
             "plan": {
                 "name": "v8.0.0",
                 "time": "0001-01-01T00:00:00Z",
-                "height": "11396100",
+                "height": "11427900",
                 "info": "",
                 "upgraded_client_state": null
             }
@@ -15,6 +15,6 @@
     "metadata": "ipfs://CID",
     "deposit": "35000000000000000000000akii",
     "title": "Upgrade Kiichain to v8.0.1",
-    "summary": "Coordinated upgrade of Kiichain mainnet to v8.0.1.\n\nThe upgrade is scheduled for Tuesday 2026-10-27 around 17:00:00 UTC (block height 11,396,100). Height is estimated from the mainnet block time over the 100,000 blocks ending 2026-10-22 03:23 UTC and should be rechecked before this proposal is submitted on Monday 2026-10-26. This is an expedited proposal with a 24-hour voting period, so it must be submitted early enough on Monday for voting to end before the upgrade height.\n\nValidators should download the v8.0.1 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v8.0.0 (upgrades/v8.0.0/bin) before the upgrade height.\n\nThe plan name stays v8.0.0 because it matches the v8.0.0 upgrade handler included in v8.0.1, which adds the Cosmos SDK x/circuit store and runs module migrations. The same binary also includes the EVM dependency bump to KiiChain/evm v0.6.2-fork.2 (August 2026 security backports). That bump has no upgrade handler of its own, so it is not a separate software-upgrade plan.\n\nBinaries and checksums are not published yet. Fill them in from the v8.0.1 release before submitting this proposal.",
+    "summary": "Coordinated upgrade of Kiichain mainnet to v8.0.1.\n\nThe upgrade is scheduled for Wednesday 2026-10-28 around 17:00:00 UTC (block height 11,427,900). Height is estimated from the mainnet block time over the 100,000 blocks ending 2026-10-22 14:10 UTC and should be rechecked before this proposal is submitted on Monday 2026-10-26. This is an expedited proposal with a 24-hour voting period, so it must be submitted early enough on Monday for voting to end before the upgrade height.\n\nValidators should download the v8.0.1 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v8.0.0 (upgrades/v8.0.0/bin) before the upgrade height.\n\nThe plan name stays v8.0.0 because it matches the v8.0.0 upgrade handler included in v8.0.1, which adds the Cosmos SDK x/circuit store and runs module migrations. The same binary also includes the EVM dependency bump to KiiChain/evm v0.6.2-fork.2 (August 2026 security backports). That bump has no upgrade handler of its own, so it is not a separate software-upgrade plan.\n\nBinaries and checksums are not published yet. Fill them in from the v8.0.1 release before submitting this proposal.",
     "expedited": true
 }
