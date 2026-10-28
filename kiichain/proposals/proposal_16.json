@@ -6,7 +6,7 @@
             "plan": {
                 "name": "v8.0.0",
                 "time": "0001-01-01T00:00:00Z",
-                "height": "11427900",
+                "height": "11495118",
                 "info": "",
                 "upgraded_client_state": null
             }
@@ -14,7 +14,7 @@
     ],
     "metadata": "ipfs://CID",
     "deposit": "35000000000000000000000akii",
-    "title": "Upgrade Kiichain to v8.0.1",
-    "summary": "Coordinated upgrade of Kiichain mainnet to v8.0.1.\n\nThe upgrade is scheduled for Wednesday 2026-10-28 around 17:00:00 UTC (block height 11,427,900). Height is estimated from the mainnet block time over the 100,000 blocks ending 2026-10-22 14:10 UTC and should be rechecked before this proposal is submitted on Monday 2026-10-26. This is an expedited proposal with a 24-hour voting period, so it must be submitted early enough on Monday for voting to end before the upgrade height.\n\nValidators should download the v8.0.1 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v8.0.0 (upgrades/v8.0.0/bin) before the upgrade height.\n\nThe plan name stays v8.0.0 because it matches the v8.0.0 upgrade handler included in v8.0.1, which adds the Cosmos SDK x/circuit store and runs module migrations. The same binary also includes the EVM dependency bump to KiiChain/evm v0.6.2-fork.2 (August 2026 security backports). That bump has no upgrade handler of its own, so it is not a separate software-upgrade plan.\n\nBinaries:\n- linux/amd64: https://kiichain-snapshots-public.s3.us-east-2.amazonaws.com/releases/v8.0.1/kiichaind-v8.0.1-linux-amd64\n  sha256: bbc26154c2206ea83796fea349286bd3db718a412b9759b4ce51921802e71f66\n- linux/arm64: https://kiichain-snapshots-public.s3.us-east-2.amazonaws.com/releases/v8.0.1/kiichaind-v8.0.1-linux-arm64\n  sha256: 699366350fa3348354713a7a89168afa31f07ca1a1310222280799bc97b23911",
+    "title": "Upgrade Kiichain to v8.0.2",
+    "summary": "Coordinated upgrade of Kiichain mainnet to v8.0.2.\n\nThe upgrade is scheduled for Friday 2026-10-30 around 17:00:00 UTC (block height 11,495,118).\n\nThis release is being created in a disclosed manner due to security fixes from Cosmos EVM private patches and binaries are available for download on GitHub.\n\nValidators should download the v8.0.2 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v8.0.0 before the upgrade height.\n\nThe plan name stays v8.0.0 because it matches the v8.0.0 upgrade handler included in v8.0.2, which adds the Cosmos SDK x/circuit store and runs module migrations.\n\nChangelog, binaries and release details:\n https://github.com/KiiChain/kiichain/releases/tag/v8.0.2",
     "expedited": true
 }
