@@ -1,0 +1,26 @@
+{
+    "messages": [
+        {
+            "@type": "/kiichain.rewards.v1beta1.MsgChangeSchedule",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "schedule": {
+                "total_amount": {
+                    "denom": "akii",
+                    "amount": "767993000000000000000000"
+                },
+                "released_amount": {
+                    "denom": "akii",
+                    "amount": "0"
+                },
+                "end_time": "2027-01-08T21:00:00Z",
+                "last_release_time": "0001-01-01T00:00:00Z",
+                "active": true
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "20000000000000000000000akii",
+    "title": "Rewards Phase 2: Release of 767,993 KII",
+    "summary": "This proposal activates Phase 2 of the KiiChain rewards program by setting a new release schedule on the rewards module, replacing the Phase 1 schedule that ends 2026-11-08T21:00:00Z.\n\nA total of 767,993 KII will be released linearly from the rewards pool, starting when this proposal is executed (targeting 2026-11-08) and ending Friday, 2027-01-08T21:00:00Z, roughly two months (61 days, ~12,590 KII/day).\n\nParameters:\n- Total amount: 767,993 KII (767993000000000000000000 akii)\n- Released so far: 0 KII\n- End time: 2027-01-08T21:00:00Z",
+    "expedited": false
+}
